@@ -33,8 +33,11 @@
 ## Цель работы
 Интегрировать экономическую систему в проект Unity и обучение ML-Agent
 
+## Задание 1 
+### Составить рабочий макет по методичке. Ознакомиться с его работой
+
 Установил компоненты для работы MLAgent, запустил сцену
-![Image alt](https://github.com/GreatSherhebe1/UrFU_labaratory_Lab-4/raw/main/скриншоты/Лаба4_1.png)
+![Image alt](https://github.com/GreatSherhebe1/UrFU_labaratory_Lab-5/raw/main/Лаба5_скрины/Лаба5_1.png)
 
 получил yaml-файл с содержанием
 
@@ -121,10 +124,6 @@ torch_settings:
   device: null
 debug: false
 ```
-
-
-## Задание 1 
-### Составить рабочий макет по методичке. Ознакомиться с его работой
 
 Ход работы:
 
