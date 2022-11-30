@@ -36,8 +36,15 @@
 ## Задание 1 
 ### Составить рабочий макет по методичке. Ознакомиться с его работой
 
+Ход работы:
+
 Установил компоненты для работы MLAgent, запустил сцену
-![Image alt](https://github.com/GreatSherhebe1/UrFU_labaratory_Lab-5/raw/main/Лаба5_скрины/Лаба5_1.png)
+
+![Image alt](https://github.com/GreatSherhebe1/UrFU_labaratory_Lab-5/raw/main/Лаба5_скрины/Laba5_1.png)
+
+По завершении обучения получил результат
+
+![Image alt](https://github.com/GreatSherhebe1/UrFU_labaratory_Lab-5/raw/main/Лаба5_скрины/Laba5_gif.gif)
 
 получил yaml-файл с содержанием
 
@@ -125,12 +132,43 @@ torch_settings:
 debug: false
 ```
 
-Ход работы:
+![Image alt](https://github.com/GreatSherhebe1/UrFU_labaratory_Lab-5/raw/main/Лаба5_скрины/Laba5_2.png)
 
+получил графики
 ## Задание 2
 ### Изменить параметры файла. yaml-агента и определить какие параметры и как влияют на обучение модели
 
 Ход работы:
+
+Изменил 7 параметров из yaml-файла
+
+1) изменение параметра **beta** с 1.0e-2 до 1.0e-9
+
+![Image alt](https://github.com/GreatSherhebe1/UrFU_labaratory_Lab-5/raw/main/Лаба5_скрины/Laba5_beta.png)
+
+2) изменил параметр **epsilon** с 0.2 до 0.9
+
+![Image alt](https://github.com/GreatSherhebe1/UrFU_labaratory_Lab-5/raw/main/Лаба5_скрины/Laba5_epsilon.png)
+
+3) изменил параметр **lambda** с 0.2 до 0.9
+
+![Image alt](https://github.com/GreatSherhebe1/UrFU_labaratory_Lab-5/raw/main/Лаба5_скрины/Laba5_lambda.png)
+
+4) изменил параметр **num_epoch** с 3 до 60
+
+![Image alt](https://github.com/GreatSherhebe1/UrFU_labaratory_Lab-5/raw/main/Лаба5_скрины/Laba5_num_epoch.png)
+
+5) изменил параметр **gamma** с 0.99 до 0.01
+
+![Image alt](https://github.com/GreatSherhebe1/UrFU_labaratory_Lab-5/raw/main/Лаба5_скрины/Laba5_gamma.png)
+
+6) изменил параметр **learning_rate** с 3.0e-4 до 3.0e-20. Результаты обучения были непостоянными: после роста значения на одной итерации, оно падало на другой. Было принято решение закончить обучение при получении максимальной награды на итерации
+
+![Image alt](https://github.com/GreatSherhebe1/UrFU_labaratory_Lab-5/raw/main/Лаба5_скрины/Laba5_learning_rate.png)
+
+7) изменил параметр **strength** с 1.0 до 0.5. Результаты обучение показывали, что модель получала максимум награды после первого эпизода обучения, но продолжило обучение дальше, поэтому прервал обучение, т.к. результат не изменялся
+
+![Image alt](https://github.com/GreatSherhebe1/UrFU_labaratory_Lab-5/raw/main/Лаба5_скрины/Laba5_strength.png)
 
 ## Задание 3
 ### Описать результаты, выведенные в TensorBoard
